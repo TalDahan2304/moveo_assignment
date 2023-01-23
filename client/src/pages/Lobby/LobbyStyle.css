@@ -1,0 +1,27 @@
+.codeblock {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer ;
+}
+
+.codeblock title {
+    margin: 0 0 0.25rem 0;
+}
+  
+.code {
+    font-style: italic;
+}
+
+.codeblocks {
+    max-width: 60rem;
+    width: 90%;
+    margin: 2rem auto;
+    animation: meals-appear 1s ease-out forwards;
+  }
+  
+
+  
+  
