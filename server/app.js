@@ -29,6 +29,9 @@ io.on("connection", (socket) =>{
     socket.on("disconnect", function(){
         connectedCount -= 1;
       });
+    socket.on("updateCode",(data)=>{
+        io.emit("changeBlock1",data);
+    });  
     
 })
 
