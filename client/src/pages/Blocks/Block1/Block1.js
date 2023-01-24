@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import hljs from "highlight.js";
 import "./Block1Style.css";
 import { marked } from "marked";
+import axios from 'axios';
 let io = require('socket.io-client');
 
 const Block1 = (props) => {
@@ -44,8 +45,14 @@ const Block1 = (props) => {
 
   const [users, setUsers] = useState([]);
   
+  const getData = async()=>{
+    const mydata = await axios.post('http://localhost:3000/JavaScriptHoisting');
+    setCode(mydata.data)
+  }
 
   useEffect(() => {
+    getData();
+
     const socket = io("http://localhost:3001");
   socket.on('changeBlock1', data => {
     setCode(data)
