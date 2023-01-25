@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
+import 'highlight.js/styles/monokai-sublime.css';
 import "./BlockStyle.css";
+
 let io = require('socket.io-client');
 
 const Block = ({title, blockCode}) => {
@@ -26,9 +28,11 @@ const Block = ({title, blockCode}) => {
     return()=>{ socket.disconnect();}
   },[]);
 
+  
   return (
     <div>
       <h1>{title} {users===1 ? "Admin" : "Student"}</h1>
+
       <textarea
           id="code-area"
           rows="30"
@@ -38,6 +42,7 @@ const Block = ({title, blockCode}) => {
           language="javascript"
           value={code}
         />
+
     </div>
   );
 };
