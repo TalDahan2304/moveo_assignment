@@ -7,19 +7,6 @@ import axios from 'axios';
 let io = require('socket.io-client');
 
 const Block1 = (props) => {
-  // const code = `
-  // \`\`\`javascript
-  //   const variable = 'hello';
-
-  //   function getProfile(id: string): {
-  //     name: string; address: string, photo: string
-  //   } {
-  //     return {
-  //       name: 'ben', address: "ben's house", photo: "/ben.png"
-  //     };
-  //   }
-  // \`\`\`
-  // `;
   const [code, setCode] = useState("abcds");
   
   const handleChange = (event) => {
