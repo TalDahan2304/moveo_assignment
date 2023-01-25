@@ -30,9 +30,8 @@ const io = new Server(server, {
 server.listen(3001, ()=>{
     console.log("SERVER IS RUNNING");
 });
+
 var connectedCount = 0;
-
-
 
 io.on("connection", (socket) =>{
     connectedCount+=1;

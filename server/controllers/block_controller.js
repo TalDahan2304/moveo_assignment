@@ -5,6 +5,22 @@ const readCode=async (req,res)=>{
     res.send(block.code);
 }
 
+const getAll = async (req, res) => {
+    try{
+        const blockList = await Code.find({})
+        res.status(200).send({
+            'status': 'OK',
+            'blockList': blockList
+        })
+    }catch(err){
+        res.status(400).send({
+            'status': 'fail',
+            'error': err.message
+        })
+    }
+}
+
+
 module.exports = {
-    readCode
+    readCode, getAll
 }
