@@ -8,6 +8,9 @@ app.use(cors());
 const blockRouter = require('./routes/block_routes')
 app.use('/JavaScriptHoisting', blockRouter)
 const server = http.createServer(app);
+const dotenv= require("dotenv").config();
+const port = process.env.PORT;
+
 
 const mongoose = require('mongoose');
 const DATABASE_URL = "mongodb://127.0.0.1/bootCampDb";
@@ -27,7 +30,7 @@ const io = new Server(server, {
     },
 });
 
-server.listen(3001, ()=>{
+server.listen(port, ()=>{
     console.log("SERVER IS RUNNING");
 });
 
