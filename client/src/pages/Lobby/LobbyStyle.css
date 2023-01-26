@@ -5,14 +5,14 @@ h1{
 }
 
 
-.codeblock {
+/* .codeblock {
   display: flex;
   justify-content: space-between;
   margin: 1rem;
   padding-bottom: 1rem;
   cursor: pointer;
   color: black;
-}
+} */
 
 a{
   text-decoration: none;
@@ -28,12 +28,12 @@ a{
 }
 
 .blocks {
+  
+  gap:10px;
   justify-content: center;
   align-items: center;
-  margin: 3rem;
-  border: 0.5px solid rgb(49, 94, 162) ;
-  border-radius: 10px;
-
+  display: flex;
+  flex-direction: column;
 }
 
 

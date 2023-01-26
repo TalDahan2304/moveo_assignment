@@ -2,7 +2,8 @@
   text-align: center;
   align-items: center;
   font-family: 'Assistant', sans-serif;
-  background-color:#fafafa;
-
 }
 
+body{
+  background-color:#fafafa;
+}

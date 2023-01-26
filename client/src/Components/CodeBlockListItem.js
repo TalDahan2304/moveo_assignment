@@ -1,12 +1,12 @@
-import React from 'react'
+import React from 'react';
+import './CodeBlockListItemStyle.css'
 
 function CodeBlockListItem({title}) {
   return (
-    <li className="codeblock">
-      <div>
+      <div className="codeblock">
         <h3>{title}</h3>
       </div>
-    </li>
+    
   )
 }
 

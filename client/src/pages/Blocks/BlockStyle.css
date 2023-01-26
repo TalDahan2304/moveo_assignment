@@ -1,5 +1,5 @@
 #code-area {
-  width: 100%;
+  width: 70%;
   height: 400px;
   padding: 10px;
   font-family: monospace;
@@ -15,6 +15,4 @@ textarea.highlightWithinTextarea{
 
 }
 
-textarea{
-  
-}
+
