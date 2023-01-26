@@ -6,7 +6,6 @@ function CodeBlockListItem({title}) {
       <div className="codeblock">
         <h3>{title}</h3>
       </div>
-    
   )
 }
 

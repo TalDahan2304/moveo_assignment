@@ -1,12 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import "./LobbyStyle.css";
 import CodeBlockListItem from "../../Components/CodeBlockListItem";
-import hljs from "highlight.js";
-
 
 const Lobby = ({arrBlocks}) => {
-  
   return (
     <div>
       <h1>Coding App</h1>

@@ -4,21 +4,10 @@ h1{
   color: rgb(49, 94, 162);
 }
 
-
-/* .codeblock {
-  display: flex;
-  justify-content: space-between;
-  margin: 1rem;
-  padding-bottom: 1rem;
-  cursor: pointer;
-  color: black;
-} */
-
 a{
   text-decoration: none;
   font-size: 15px;
   font-family: 'Assistant', sans-serif;
-  
 }
 
 .blockList{
@@ -28,7 +17,6 @@ a{
 }
 
 .blocks {
-  
   gap:10px;
   justify-content: center;
   align-items: center;
